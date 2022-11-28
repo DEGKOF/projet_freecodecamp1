@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.container{  
+    font-family: sans-serif;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width:50%;
+}
+h1, .container>p:first-of-type  {
+    text-align: center;
+    word-spacing: 4px;
+    font-weight: normal;
+}
+h1{
+    font-size: 35px;
+    margin: 15px;
+}
+.container>p:first-of-type {
+    font-style: italic;
+    font-size: 18px;
+    margin: 15px;
+    font-weight: 100;
+    opacity: 0.8;
+}
+form{
+    padding-top: 15px;
+    padding-left: 5%;
+    padding-right:5%;
+    padding-bottom:5%;
+    border-radius: 5px;
+    background: linear-gradient( 115deg, hsla(240, 40%, 21%, 0.952), rgba(32, 32, 78, 0.7) );
+}
+form input[type="radio"]{
+    display: inline-block;
+}
+input[type="text"], input[type="submit"], select{
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    /**********/
+    height: 35px;
+    border-radius: 5px;
+    border: 0px;
+}
+textarea{
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    border-radius: 1.5px;
+    border: 0px;
+    height: 120px;  
+    font-size: 18px; 
+}
+input[type="submit"]{
+    margin-bottom: 45px;
+    height: 45px;
+    color: white;
+    font-size: large;
+    background-color: RGBA( 0, 240, 154, 1 );
+}
+input, select > option,  select{
+    font-size: 18px;
+    color: rgb(114, 107, 107);
+    
+}
+input:active, select:active > option,  select:active{
+    border: 0px solid gray;
+}
+input[type="checkbox"], input[type="radio"]{
+    display: inline-block;
+    margin:  0px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.areduc{
+    font-size: 13px;
+    display: inline-block;
+}
+.disabled{
+    background-color: darkgrey;
+}
+@media screen and (max-width: 750px) {
+    .container{  
+        font-family: sans-serif;
+        color: white;
+        margin-top: 50px;
+        width:100%;
+    }
+    h1{
+        margin: 0px;
+    }
+}
+@media screen and (max-width: 250px) {
+    .container{  
+        font-family: sans-serif;
+        color: white;
+        margin-top: 50px;
+        width:100%;
+    }
+    h1{
+        margin: 0px;
+    }
+}
